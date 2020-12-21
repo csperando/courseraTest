@@ -69,12 +69,18 @@ nav div p {
   color: inherit;
 }
 
+/*
+
+I like this on desktop, but not on mobile.
+move to media query
+
 nav a:hover div, nav a:active div {
   cursor: pointer;
   background-color: gray;
   border-radius: 15px;
   color: white;
 }
+*/
 
 div.section {
   min-height: 1000px;
