@@ -6,6 +6,9 @@
   font-family: helvetica, sans-serif;
 }
 
+body {
+
+}
 
 p {
 
@@ -15,20 +18,18 @@ a {
   text-decoration: none;
 }
 
+#backToTop {
+  position: fixed;
+  bottom: 50px;
+  right: 20px;
+  color: black;
+  text-decoration: underline;
+}
+
 header {
   position: relative;
   width: 100%;
   background-color: rgb(238, 244, 244);
-}
-
-.backgroundImage {
-  z-index: -1;
-  width: 1000px;
-  height: 1000px;
-  position: absolute;
-  top: 0;
-  left: -500px;
-  overflow: hidden;
 }
 
 header h1 {
@@ -42,7 +43,7 @@ header h3 {
   text-align: center;
   position: relative;
   width: 100%;
-  margin: 0 0 10px 0;
+  padding: 0 0 10px 0;
   color: gray;
 }
 
@@ -84,6 +85,15 @@ nav a:hover div, nav a:active div {
 
 div.section {
   min-height: 1000px;
+}
+
+.section div {
+  display: grid;
+  grid-template: repeat(12, 1fr) / repeat(12, 1fr);
+}
+
+.sectionTitle {
+  grid-area: 2 / 2 / span 1 / span 12;
 }
 
 #section1 {

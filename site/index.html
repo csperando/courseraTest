@@ -6,21 +6,26 @@
 <title>Test Site</title>
 <link rel="stylesheet" type="text/css" href="stylesheets/mainStyle.css">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="stylesheets/menuStyle.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="javascript/main.js"></script>
 </head>
 
 <body>
   <header>
     <h1>Coleman Sperando</h1>
     <h3>Front-end Developer</h3>
-    <nav>
-      <div></div>
-      <a href=""><div><p>home</p></div></a>
-      <a href="modules.html"><div><p>projects</p></div></a>
-      <a href="assignments.html"><div><p>contact</p></div></a>
+
+    <span id="menuOpen">menu</span>
+    <nav class="menu" style="display:none">
+      <span id="menuClose">close</span>
+      <div>
+        <a href=""><p>home</p></a>
+        <a href=""><p>projects</p></a>
+        <a href=""><p>contact</p></a>
+      </div>
     </nav>
   </header>
-
-  <div class="backgroundImage"></div>
 
   <div id="section1" class="section">
     <div>
@@ -40,6 +45,7 @@
     </div>
   </div>
 
-  </body>
+  <span id="backToTop" style="display:none">top</span>
 
+  </body>
 </html>
