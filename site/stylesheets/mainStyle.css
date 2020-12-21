@@ -1,4 +1,45 @@
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
 p {
   color: red;
+}
+
+a {
+  text-decoration: none;
+}
+
+header h1 {
+  text-align: center;
+  margin: 50px;
+}
+
+header nav {
+  display: grid;
+  grid-template-columns: 1fr auto auto auto 1fr;
+  grid-gap: 20px;
+}
+
+header nav div {
+  width: 150px;
+  height: 50px;
+  position: relative;
+}
+
+nav div p {
+  height: 30px;
+  text-align: center;
+  margin: 10px 0;
+  font-size: 24px;
+  font-weight: bold;
+  color: black;
+}
+
+div#section1 {
+  clear: both;
 }
