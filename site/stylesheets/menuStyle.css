@@ -20,13 +20,21 @@
   top: 0;
   left: 0;
   height: 100vh;
-  width: 60%;
-  background-color: black;
-  opacity: 0.5;
+  width: 60vw;
   z-index: 99;
 }
 
-.menu div {
+.menuBackground {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 60vw;
+  height: 100vh;
+  background-color: black;
+  opacity: 0.5;
+}
+
+.menu div.menuList {
   position: relative;
   top: 200px;
   left: 10%;
