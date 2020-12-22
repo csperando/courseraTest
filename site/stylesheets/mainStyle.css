@@ -80,9 +80,13 @@ div.section {
 
 span.sectionBorder {
   display: block;
-  margin: 50px 20px 20px 20px;
+  position: relative;
+  margin-top: 50px;
+  margin-bottom: 20px;
+  left: 20%;
   border-top: 1px solid gray;
   height: 2px;
+  width: 60%;
 }
 
 .sectionTitle, .section h3 {
