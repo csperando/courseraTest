@@ -93,7 +93,19 @@ div.section {
 }
 
 .sectionTitle {
-  grid-area: 2 / 2 / span 1 / span 12;
+  grid-area: 3 / 3 / span 1 / span 9;
+  z-index: 2;
+}
+
+.sectionBorder {
+  grid-area: 2 / 2 / span 10 / span 10;
+  background-color: white;
+  border-radius: 20px;
+  border: 1px solid gray;
+}
+
+.sectionBorder p {
+  grid-area: 3 / 2 / span 9 / span 10;
 }
 
 #section1 {
