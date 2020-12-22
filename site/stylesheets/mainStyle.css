@@ -20,7 +20,6 @@ a {
 
 h3 {
   position: relative;
-  width: 100%;
   padding: 0 0 10px 0;
   color: gray;
 }
@@ -91,6 +90,33 @@ span.sectionBorder {
 
 .sectionTitle, .section h3 {
   padding-left: 20px;
+  animation-name: slideLeft;
+  animation-duration: 3s;
+}
+
+@@keyframes slideLeft {
+  from {padding-left: 120vw;}
+  to {padding-left: 20px;}
+}
+
+.stickyTitle {
+  position: -webkit-sticky; /* Safari */
+  position: sticky;
+  top: 0;
+}
+
+.sectionGrid {
+  position: relative;
+  width: 100%;
+  height: auto;
+}
+
+.circleImg {
+  position: relative;
+  width: 100vw;
+  margin: auto;
+  -webkit-clip-path: circle(30%); /* Safari */
+  clip-path: circle(30%);
 }
 
 #Philosophy {
