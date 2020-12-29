@@ -15,6 +15,13 @@ $(document).ready(function(){
   $(document).on("scroll", function() {
     var y = window.scrollY;
     scrollStyles(y);
+
+    if(y > 210) {
+      // show back to top 
+    }
+    else {
+
+    }
   })
 
 })

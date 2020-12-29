@@ -53,6 +53,7 @@ header nav {
   display: grid;
   grid-template-columns: auto repeat(3, 1fr) auto;
   grid-gap: 5px;
+  z-index: 98;
 }
 
 header nav div {
@@ -70,6 +71,10 @@ nav div p {
   font-size: 14px;
   font-weight: bold;
   color: inherit;
+}
+
+#menuOpen, #menuClose {
+  z-index: 99;
 }
 
 div.section {
@@ -105,18 +110,23 @@ span.sectionBorder {
   top: 0;
 }
 
-.sectionGrid {
-  position: relative;
-  width: 100%;
-  height: auto;
+canvas#myCanvas {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 97;
 }
 
-.circleImg {
+.subsection {
   position: relative;
-  width: 100vw;
-  margin: auto;
-  -webkit-clip-path: circle(30%); /* Safari */
-  clip-path: circle(30%);
+  width: 80%;
+  left: 20%;
+  min-height: 300px;
+  background-color: white;
+  border-radius: 20px;
+
 }
 
 #Philosophy {

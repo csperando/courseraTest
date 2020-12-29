@@ -9,13 +9,16 @@
   <link rel="stylesheet" type="text/css" href="stylesheets/menuStyle.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="javascript/main.js"></script>
+  <script src="javascript/draw.js"></script>
 </head>
 
 <body>
+
+  <canvas id="myCanvas"></canvas>
+
   <header>
     <h1>Coleman Sperando</h1>
     <h3>Front-end Developer</h3>
-
     <span id="menuOpen">menu</span>
     <nav class="menu" style="display:none">
       <div class="menuBackground"></div>
@@ -28,34 +31,17 @@
     </nav>
   </header>
 
-<!--
-  <canvas id="myCanvas"></canvas>
--->
-
   <div id="Philosophy" class="section">
     <span class="sectionBorder"></span>
     <h2 class="sectionTitle">Philosophy.</h2>
     <h3 class="stickyTitle">
       <span id="simple">Simple</span>, <span id="functional">functional</span>, <span id="responsive">responsive</span>
     </h3>
-    <div class="sectionGrid">
-      <img class="circleImg" src="images/grandCanyon1.jpg" style="display:none">
+
+    <div class="subsection">
+      <img src="images/abc.svg" height="100px">
     </div>
-    <!--
-    <p>
-      Put user experience first on your list of priorities.
-      Most of the traffic your website receives will consist of users
-      that want to be there. Modern search engines use very sophisticated
-      algorithms to present the most relevant websites for any given search.
-      So don't clutter your home page with useless information. Get your point
-      across as simply as possible. Within the first second of landing on
-      your page, the user should know exactly what you have to offer.
-    </p>
-    <p>
-      However, what goes on behind the scenes should be anything but simple.
-      To ensure a pleasant user experience you need a lot of functionality.
-    </p>
-  -->
+
   </div>
 
   <span id="backToTop" style="display:none">top</span>
