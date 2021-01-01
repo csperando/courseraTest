@@ -17,7 +17,7 @@ $(document).ready(function(){
     scrollStyles(y);
 
     if(y > 210) {
-      // show back to top 
+      // show back to top
     }
     else {
 
@@ -30,24 +30,41 @@ $(document).ready(function(){
 function scrollStyles(y) {
   // console.log(y)
   if(y >= 210 && y < 230) {
-    // console.log("sticky")
+    // SIMPLE section
     $("#simple").css("color", "black")
     $("#functional").css("color", "gray")
     $("#responsive").css("color", "gray")
+    $("#simpleDiv").css("display", "block")
+    $("#functionalDiv").css("display", "none")
+    $("#responsiveDiv").css("display", "none")
   }
   else if (y >= 230 && y < 250) {
     $("#simple").css("color", "gray")
     $("#functional").css("color", "black")
     $("#responsive").css("color", "gray")
+    $("#simpleDiv").css("display", "none")
+    $("#functionalDiv").css("display", "block")
+    $("#responsiveDiv").css("display", "none")
   }
   else if (y >= 250 && y < 1000) {
     $("#simple").css("color", "gray")
     $("#functional").css("color", "gray")
     $("#responsive").css("color", "black")
+    $("#simpleDiv").css("display", "none")
+    $("#functionalDiv").css("display", "none")
+    $("#responsiveDiv").css("display", "block")
+
   }
   else {
     $("#simple").css("color", "gray")
     $("#functional").css("color", "gray")
     $("#responsive").css("color", "gray")
+    $("#simpleDiv").css("display", "none")
+    $("#functionalDiv").css("display", "none")
+    $("#responsiveDiv").css("display", "none")
   }
+}
+
+function transition() {
+  console.log("enter from right")
 }
