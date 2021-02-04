@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+<title>Test Site</title>
+<link rel="stylesheet" type="text/css" href="stylesheets/testStyle.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+
+  <div class="testDiv" >
+    <p>Test Clipping and masking</p>
+  </div>
+
+
+  </body>
+
+</html>
+
+<script>
+
+$("#menuClose").on("click", function() {
+  $(".menu").css("display", "none")
+  $("#menuOpen").css("display", "block")
+})
+
+$("#menuOpen").on("click", function() {
+  $(this).css("display", "none")
+  $(".menu").css("display", "block")
+})
+
+</script>
