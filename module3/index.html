@@ -15,25 +15,63 @@
 <body>
 
   <header>
-    <nav class="navbar navbar-expand-sm navbar-light bg-light">
-      <div class="container-fluid">
+    <nav class="navbar navbar-expand-sm navbar-light">
+      <!-- <div class="container-fluid"> -->
+
         <a class="navbar-brand" href="#"><h1>Food, LLC</h1></a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggler" aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
 
+
         <div class="collapse navbar-collapse" id="navbarToggler">
           <!-- collapse content here -->
           <div class="d-sm-none">
-            <a href="#"><p>chicken</p></a>
-            <a href="#"><p>beef</p></a>
-            <a href="#"><p>sushi</p></a>
+            <a class="dropdown-item" href="#chicken"><p>chicken</p></a>
+            <a class="dropdown-item" href="#beef"><p>beef</p></a>
+            <a class="dropdown-item" href="#sushi"><p>sushi</p></a>
           </div>
         </div>
 
-      </div>
+      <!-- </div> --> <!-- end .container-fluid -->
+
     </nav>
   </header>
+
+
+
+  <section id="menu">
+
+    <h2 class="text-center menuTitle">Our Menu</h2>
+
+    <div class="container">
+
+      <div class="row">
+        <div class="col-xs-12">
+          <div class="menuSection" id="chicken">
+            <h3 class="text-center">chicken</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          </div>
+        </div>
+
+        <div class="col-xs-12">
+          <div class="menuSection" id="beef">
+            <h3 class="text-center">beef</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          </div>
+        </div>
+
+        <div class="col-xs-12">
+          <div class="menuSection" id="sushi">
+            <h3 class="text-center">sushi</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+  </section>
 
   <footer>
     <!-- <p>footer content</p> -->
