@@ -4,7 +4,7 @@
   var byeSpeaker = {};
   var speakWord = "Good Bye";
 
-  byeSpeaker.prototype.speak = function () {
+  byeSpeaker.speak = function (name) {
     console.log(speakWord + " " + name);
   }
 
