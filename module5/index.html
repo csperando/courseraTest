@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap links -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+  <link type="text/css" rel="stylesheet" href="css/mainStyle.css">
+  <script src="js/module5.js"></script>
+
+  <title>Module 5</title>
+</head>
+
+<body>
+
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <a class="navbar-brand" href="#">HTML/CSS/JS</a>
+    </nav>
+  </header>
+
+  <h2 class="text-center">Module 5</h2>
+
+  <section id="notes">
+
+    <ul class="nav nav-tabs" id="myTab" role="tablist">
+      <li class="nav-item">
+        <a class="nav-link active" id="http-tab" data-toggle="tab" href="#http" role="tab" aria-controls="http" aria-selected="true">HTTP</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" id="dom-tab" data-toggle="tab" href="#dom" role="tab" aria-controls="dom" aria-selected="false">DOM</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" id="ajax-tab" data-toggle="tab" href="#ajax" role="tab" aria-controls="ajax" aria-selected="false">AJAX</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" id="json-tab" data-toggle="tab" href="#json" role="tab" aria-controls="json" aria-selected="false">JSON</a>
+      </li>
+    </ul>
+
+    <div class="tab-content" id="myTabContent">
+      <div class="tab-pane fade show active" id="http" role="tabpanel" aria-labelledby="http-tab">
+
+        <div class="container">
+
+          <div class="row">
+            <div class="col-xs-12">
+              <div class="noteSection">
+                <h3 class="text-center">HTTP</h3>
+                <p>Hypertext transfer protocol</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div> <!-- end http tab -->
+
+      <div class="tab-pane fade" id="dom" role="tabpanel" aria-labelledby="dom-tab">
+
+        <div class="container">
+
+          <div class="row">
+            <div class="col-xs-12">
+              <div class="noteSection">
+                <h3 class="text-center">DOM</h3>
+                <p>Document Object Model</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div> <!-- end dom tab -->
+
+      <div class="tab-pane fade" id="ajax" role="tabpanel" aria-labelledby="ajax-tab">
+
+        <div class="container">
+
+          <div class="row">
+            <div class="col-xs-12">
+              <div class="noteSection">
+                <h3 class="text-center">Ajax</h3>
+                <p>Asynchronous Javascript and XML</p>
+                <button id="testButton">Test Ajax</button>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div> <!-- end ajax tab -->
+
+      <div class="tab-pane fade" id="json" role="tabpanel" aria-labelledby="json-tab">
+
+        <div class="container">
+
+          <div class="row">
+            <div class="col-xs-12">
+              <div class="noteSection">
+                <h3 class="text-center">JSON</h3>
+                <p>Javascript Object Notation</p>
+                <button id="testButton2">Get JSON</button>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div> <!-- end json tab -->
+
+
+    </div> <!-- end tab content -->
+  </section>
+
+  <footer>
+    <!-- <p>footer content</p> -->
+  </footer>
+
+
+  </body>
+</html>

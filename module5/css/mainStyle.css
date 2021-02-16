@@ -1,0 +1,17 @@
+
+body {
+    /* allow for scrolling on all device sizes*/
+    min-height: 1000px;
+    position: relative;
+}
+
+h2 {
+  margin-top: 20px;
+}
+
+section#notes {
+  position: relative;
+  width: 60%;
+  left: 20%;
+  top: 50px;
+}
