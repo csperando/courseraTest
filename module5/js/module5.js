@@ -1,6 +1,6 @@
 
 $(document).ready(function() {
-  console.log('ready');
+  //console.log('ready');
 
   $('#testButton').on('click', function() {
     getData();
@@ -14,19 +14,18 @@ $(document).ready(function() {
 
 function getData() {
 
-  var imageString = "hitarthJadhav.jpg";
-
   $.get('data/data.txt', function(result) {
-    console.log(result);
+    //console.log(result);
+
+    $("#ajaxTestTag").text(result);
   });
 
-  $.get('images/'+imageString, function(result) {
-    console.log(result);
-  })
 }
 
 function getJSONData() {
   $.get('data/data.json', function(result) {
     console.log(result);
+
+    $("#jsonTestTag").text('check console to view JSON result!');
   });
 }
