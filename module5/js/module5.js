@@ -13,9 +13,16 @@ $(document).ready(function() {
 });
 
 function getData() {
+
+  var imageString = "hitarthJadhav.jpg";
+
   $.get('data/data.txt', function(result) {
     console.log(result);
   });
+
+  $.get('images/'+imageString, function(result) {
+    console.log(result);
+  })
 }
 
 function getJSONData() {
